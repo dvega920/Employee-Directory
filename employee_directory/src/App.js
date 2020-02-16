@@ -9,12 +9,16 @@ import employees from "./employees.json"
 function App() {
   return (
     <Wrapper>
-      <Title className="btn btn-success">Employee Directory </Title>
+      <Title>Employee Directory </Title>
       <Search></Search>
       <EmployeeCard
-        name={employees}
-      ></EmployeeCard>
-
+        id={employees[0].id}
+        image={employees[0].image}
+        name={employees[0].name}
+        phone={employees[0].phone}
+        email={employees[0].email}
+        dob={employees[0].dob}
+      />
     </Wrapper>);
 }
 
