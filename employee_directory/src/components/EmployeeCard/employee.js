@@ -7,7 +7,7 @@ export default function EmployeeCard(props) {
             <table>
                 <thead>
                     <tr>
-                        <th>Id</th>
+                        {/* <th>Id</th> */}
                         <th>Avatar</th>
                         <th>Name</th>
                         <th>Phone</th>
@@ -17,8 +17,8 @@ export default function EmployeeCard(props) {
                 </thead>
                 <tbody>
                     <tr>
-                        <td>{props.id}</td>
-                        <td><img alt={props.name} src={props.img} /></td>
+                        {/* <td>{props.id}</td> */}
+                        <td className="avatar"><img alt={props.name} src={props.image} /></td>
                         <td>{props.name}</td>
                         <td>{props.phone}</td>
                         <td>{props.email}</td>
