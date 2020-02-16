@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "name": [
+            {
+                "firstName": "David",
+                "lastName": "Vega"
+            }
+        ],
+        "phone": "123-456-789",
+        "email": "dvchase@gmail.com",
+        "DOB": "09-20-1981"
+    }
+]
