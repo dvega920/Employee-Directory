@@ -1,3 +1,7 @@
 .card {
     color: black
 }
+
+.avatar img {
+    width: 80px;
+}
