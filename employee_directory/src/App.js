@@ -1,26 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Wrapper from "./components/Wrapper/wrapper";
+import Title from "./components/Title/title";
+import Search from "./components/Search/index";
+import EmployeeCard from "./components/EmployeeCard/employee";
+import employees from "./employees.json"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Wrapper>
+      <Title className="btn btn-success">Employee Directory </Title>
+      <Search></Search>
+      <EmployeeCard
+        name={employees}
+      ></EmployeeCard>
+
+    </Wrapper>);
 }
 
 export default App;
